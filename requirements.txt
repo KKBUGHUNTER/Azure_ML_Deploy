@@ -1,5 +1,10 @@
-Flask==2.2.2
-gunicorn
-Werkzeug==2.2.2
-pickle
+pandas
 numpy
+seaborn
+matplotlib
+scikit-learn
+catboost
+xgboost
+Flask
+
+#-e .
