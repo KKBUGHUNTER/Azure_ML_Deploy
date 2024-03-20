@@ -33,7 +33,8 @@ def hello():
 
 
 def predict_loan_sanction(input_values):
-    loaded_model = joblib.load('model/loan_prediction_model.pkl')
+    model_path = os.path.join(os.path.dirname(__file__), 'model/loan_prediction_model.pkl')
+    loaded_model = joblib.load(model_path)
     input_array = np.array(input_values).reshape(1, -1)
     prediction = loaded_model.predict(input_array)
     return prediction[0]
